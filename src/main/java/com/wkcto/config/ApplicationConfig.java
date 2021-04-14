@@ -14,6 +14,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
  */
 @Configuration
 public class ApplicationConfig {
+    @Bean
     public PasswordEncoder passwordEncoder() {
         //推荐使用的密码加密类
         PasswordEncoder encoder = new BCryptPasswordEncoder();
